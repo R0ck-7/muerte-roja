@@ -1,0 +1,354 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #792020;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    height: 125px;
+    /* Ajusta la altura del logo según necesites */
+    width: auto;
+    /* Permite que el ancho se ajuste automáticamente */
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    margin-left: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .images img {
+    width: 250px;
+    /* Tamaño deseado para las imágenes */
+    height: auto;
+    margin: 30px;
+    /* Espacio entre las imágenes */
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .content p {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background: #ba4545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #555;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .closeBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeBtn:hover,
+  .closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    background: #792020;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  footer .social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer .social-media li {
+    margin: 0 10px;
+  }
+  
+  footer .social-media li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+    }
+  
+    .menu ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+  
+    .menu ul li:first-child {
+        margin-top: 0;
+    }
+  
+    .content h1 {
+        font-size: 1.5em;
+    }
+  
+    .modal-content {
+        width: 90%;
+    }
+  }
+  
+  /* Estilos para tabletas horizontales */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .menu {
+        justify-content: center;
+        /* Centra el menú */
+    }
+  
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        text-align: left;
+    }
+  
+    .content h1 {
+        font-size: 2.5em;
+        margin-top: 20px;
+        /* Espacio arriba del título */
+        text-align: center;
+        /* Centra el título */
+    }
+  
+    .images {
+        order: -1;
+        /* Mueve las imágenes arriba */
+        margin-right: 20px;
+        /* Espacio a la derecha */
+    }
+  
+    .images img {
+        width: 150px;
+        /* Tamaño ajustado para tabletas horizontales */
+        margin: 10px 0;
+        /* Espacio entre las imágenes */
+    }
+  
+    button {
+        margin-top: 20px;
+        /* Espacio arriba del botón */
+    }
+  
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .social-media {
+        margin-top: 20px;
+        /* Espacio arriba de las redes sociales */
+        text-align: center;
+    }
+  }
+  
+  
+  /* Animaciones */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+    }
+  
+    to {
+        transform: translateY(0);
+    }
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+    /* Añadido para centrar el contenido */
+  }
+  
+  .content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-in-out;
+    text-align: center;
+    /* Añadido para centrar el título */
+  }
+  
+  .content p {
+    margin-bottom: 20px;
+    text-align: justify;
+    /* Opcional: justificar el texto */
+  }
+  
+  footer {
+    background: #792020;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .author {
+    flex: 1;
+    /* Ocupa el espacio disponible */
+  }
+  
+  .social-media {
+    flex: 1;
+    /* Ocupa el espacio disponible */
+    text-align: right;
+    /* Alinea las redes sociales a la derecha */
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media ul li {
+    display: inline-block;
+    /* Para que los íconos estén en línea */
+    margin-left: 10px;
+    /* Espacio entre los íconos */
+  }
+  
+  .social-media ul li:first-child {
+    margin-left: 0;
+    /* Sin margen izquierdo para el primer ícono */
+  }
+  
+  .social-media ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .menu {
+        justify-content: center; /* Centra el menú */
+    }
+  
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido */
+        padding: 20px;
+        text-align: center;
+    }
+  
+    .content h1 {
+        font-size: 2.5em;
+        margin-top: 20px; /* Espacio arriba del título */
+    }
+  
+    .images {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Espacio arriba de las imágenes */
+    }
+  
+    .images img {
+        width: 250px; /* Tamaño deseado para las imágenes */
+        margin: 0 10px; /* Espacio entre las imágenes */
+    }
+  
+    button {
+        margin-top: 20px; /* Espacio arriba del botón */
+    }
+  
+    footer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px; /* Espacio arriba del footer */
+    }
+  
+    .social-media {
+        margin-top: 20px; /* Espacio arriba de las redes sociales */
+    }
+  }
+  

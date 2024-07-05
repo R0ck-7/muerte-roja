@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página Responsive</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <img src="media/Santa-muerte-roja-9.webp" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="images">
+        <img src="media/R.jpg" alt="Imagen 1">
+        
+    </section>
+
+    <section class="content">
+        <h1>la muerte roja</h1>
+        <p>"La Máscara de la Muerte Roja" es un cuento corto escrito por Edgar Allan Poe en 1842. La historia narra cómo el príncipe Próspero decide refugiarse junto a sus amigos en su castillo para escapar de una plaga mortal conocida como "la Muerte Roja". Durante su estancia en el castillo, organizan una fiesta extravagante en siete salones de diferentes colores, con la última sala decorada en negro y rojo, las tonalidades de la plaga. Sin embargo, un extraño disfrazado con una máscara roja irrumpe en la fiesta y causa terror entre los asistentes. A medida que la historia avanza, el mensaje principal se vuelve evidente: la inevitabilidad de la muerte y la incapacidad del ser humano para escapar de ella.
+</p>
+        <button id="modalBtn"><a  class="button" href="iniciasesion.html" title="ir arriba">Iniciar Sesión</a></button>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <p>Este es el contenido del modal.</p>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="social-media">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <div class="author">
+            <p>Jose Joaquin Roque</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
